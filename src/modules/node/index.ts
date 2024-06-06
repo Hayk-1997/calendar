@@ -1,4 +1,6 @@
-class Node {
+import { NodeInterface } from '../../interfaces/NodeInterface';
+
+class Node implements NodeInterface {
     public next: Node | null;
     public previous: Node | null;
     public value: any;

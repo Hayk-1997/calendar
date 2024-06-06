@@ -8,4 +8,6 @@ export interface StorageInterface<T = Hashmap> {
     set(key: string, value: any): T;
     get(key: string): T;
     getEntry(key: string): { bucket: LinkedList, entry: { key: string, value: LinkedList }, index: number  };
+    getIndex(key: string): number;
+    hash(key: string): number;
 }

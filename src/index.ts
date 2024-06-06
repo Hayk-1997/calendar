@@ -1,4 +1,3 @@
-
 import HashMap from './modules/hashmap';
 import LinkedList from './modules/linkedlist';
 
@@ -54,8 +53,7 @@ calendar.createRecurringEvent('recurring', {
     frequency: 'Daily'
 })
 
-
-console.log(calendar.getRecurringEvent('recurring').bucket.length);
+// console.log(calendar.getRecurringEvent('recurring').bucket);
 /*calendar.getRecurringEvent('recurring').bucket.find((node: any) => {
     console.log('node', node.value);
 })*/

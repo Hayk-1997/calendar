@@ -53,9 +53,7 @@ class HashMap implements StorageInterface {
         const index = this.getIndex(key);
         this.buckets[index] = this.buckets[index] || new LinkedList();
         const bucket = this.buckets[index];
-
-        //@ts-ignore
-        const entry = bucket.find(({ value: node }) => {
+        const entry = bucket.find(({ value: node }: { value: any }) => {
             if (key === node.key) {
                 return node;
             }
